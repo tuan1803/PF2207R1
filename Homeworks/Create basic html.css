@@ -1,0 +1,21 @@
+ul ol li {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+form div {
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.form-2 {
+    border: 20px solid lightblue;
+}
+
+.form-3 {
+   background-color: rgb(236, 209, 163);
+}
+
+.form-3 h1 {
+    background-color: aquamarine;
+}

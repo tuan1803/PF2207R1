@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Create basic html.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><h1>Việt Nam</h1>
+            <ol>
+                <li>Hà Nội</li>
+                <li>Sài Gòn</li>
+                <li>Huế</li>
+                <li>Đà Nẵng</li>
+            </ol>
+        </li>
+
+        <li><h1>Hoa Kì</h1>
+            <ol>
+                <li>New York</li>
+                <li>Ló Angeles</li>
+                <li>Chicago</li>
+                <li>Houston</li>
+            </ol>
+        </li>
+
+        <li><h1>Trung Quốc</h1>
+            <ol>
+                <li>Beijing</li>
+                <li>Chongquing</li>
+                <li>Shanghai</li>
+                <li>Tianjin</li>
+            </ol>
+        </li>
+    </ul>
+
+<form action="">
+    <div>
+        <label for="name">Họ và tên:</label><br>
+        <input type="text" name="name">
+    </div>
+    <div>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" >
+    </div>
+    <div>
+        <label for="phonenumber">Số điện thoại:</label><br>
+        <input type="phonenumber" name="phonenumber">
+    </div>
+    <div>
+        <label for="gender">Giới tính:</label><br>
+        <input type="radio" name="gender" checked>Nam
+        <input type="radio" name="gender">nữ
+    </div>
+    <div>
+        <button type="submit">Đăng ký</button>
+    </div>
+</form>
+
+    <form action="" class="w-50 m-auto form-2 p-3">
+        <h1 class="text-center bg-danger text-white">Sở thích của bạn</h1>
+        <div class="mb-3 ms-0 text-primary">
+            <label for="name" class="form-label">Họ và tên:</label>
+            <input type="text" name="name" class="form-control">
+        </div>
+        <div class="mb-3 ms-0 text-primary">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" name="email" class="form-control">
+        </div>
+        <div class="mb-3 ms-0 text-danger">
+            <label for="hobby" class="form-label text-primary">Sở thích</label>
+            <div class="row w-100">
+                <div class="col">
+                   <input type="checkbox"> Thể thao
+                </div>
+                <div class="col">
+                    <input type="checkbox"> Âm nhạc 
+                 </div>
+                 <div class="col">
+                    <input type="checkbox"> Âm nhạc 
+                 </div>
+            </div>
+            <div class="row w-100">
+                <div class="col">
+                   <input type="checkbox"> Lướt web
+                </div>
+                <div class="col">
+                    <input type="checkbox"> Chơi game
+                 </div>
+                 <div class="col">
+                    <input type="checkbox"> Điện ảnh
+                 </div>
+            </div>
+            <div class="row w-100">
+                <div class="col">
+                   <input type="checkbox"> Du lịch
+                </div>
+            </div>
+            <button type="submit">Gửi thông tin</button>
+            <button type="reset" class="ms-3">Nhập lại</button>
+        </div>
+        
+    </form>
+<br><br><br><br><br><br><br>
+    <form action="" class="w-50 m-auto form-3 p-2">
+        <h1 class="text-center text-primary">Đăng kí học viên</h1>
+        <div class="mb-3 ms-0 text-danger">
+            <div class="row w-100 mt-3">
+                <div class="col-3 text-center">
+                    <label for="name" class="form-label text-primary">Họ và tên</label>
+                </div>
+                <div class="col-7 ms-0 p-0">
+                    <input type="text" name="name" class="form-control">
+                 </div>
+            </div>
+            <div class="row w-100 mt-3">
+                <div class="col-3 text-center">
+                    <label for="birth" class="form-label text-primary">Ngày sinh</label>
+                </div>
+                <div class="col-7 ms-0 p-0">
+                    <input type="text" name="name" class="form-control">
+                 </div>
+            </div>
+            <div class="row w-100 mt-3">
+                <div class="col-3 text-center">
+                    <label for="gender" class="form-label text-primary">Giới tính</label>
+                </div>
+                <div class="col-7 ms-0 p-0">
+                    <input type="radio" name="gender">Nam
+                    <input type="radio" name="gender">Nữ
+                 </div>
+            </div>
+            <div class="row w-100 mt-3">
+                <div class="col-3 text-center">
+                    <label for="address" class="form-label text-primary">Địa chỉ</label>
+                </div>
+                <div class="col-7 ms-0 p-0">
+                    <textarea name="address" class="form-control" cols="30" rows="7"></textarea>
+                 </div>
+            </div>
+            <div class="row w-100 mt-3">
+                <div class="col-3 text-center">
+                    <label for="grade" class="form-label text-primary">Lớp</label>
+                </div>
+                <div class="col-7 ms-0 p-0">
+                    <select name="dropdown">
+                        <option value="-Chọn lớp-">-Chọn lớp-</option>
+                        <option value="grade 1">Lớp 1</option>
+                        <option value="grade 2">Lớp 2</option>
+                    </select>
+                 </div>
+            </div>
+            <div class="row w-100 mt-3">
+                <div class="col-3 text-center">
+                    <label for="email" class="form-label text-primary">Email</label>
+                </div>
+                <div class="col-7 ms-0 p-0">
+                    <input type="text" name="name" class="form-control">
+                 </div>
+            </div>
+            <div class="row w-100 mt-3">
+                <div class="col-3 text-center">
+                    <label for="phonenumber" class="form-label text-primary">Điện thoại</label>
+                </div>
+                <div class="col-7 ms-0 p-0" ms-0 p-0>
+                    <input type="number" name="name" class="form-control">
+                 </div>
+            </div>
+            <div class="row w-100 mt-3">
+                <div class="col-3 text-center">
+                </div>
+                <div class="col-7 ms-0 p-0">
+                    <button type="submit">Đăng ký</button>
+                    <button type="reset">Nhập lại</button>
+                 </div>
+            </div>            
+        </div>
+        
+    </form>
+</body>
+</html>
