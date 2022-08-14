@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let loan = prompt ('Nhập vào số tiền vay') ;
+    let interest = prompt ('Nhập vào lãi suất cho vay');
+    let year = prompt ('Nhập vào số năm cho vay');
+    let interestperyear = loan * interest ; 
+    let M = loan + year * interestperyear ;
+    document.write('Sau '+  year  + ' năm số tiền cả gốc và lãi là: '+ M)
+
+</script>
+</html>
