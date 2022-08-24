@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="fruit">
+    <button onclick="see()">Xem giá</button>
+</body>
+<script>
+
+    function see() {
+        let fruit = document.getElementById('fruit').value
+       let twenty = 20000
+       let thirty = 30000
+       let forty = 40000
+       let fifty = 50000
+        switch (fruit) {
+            case 'Ổi': 
+            case 'Dưa Hấu':
+            alert (twenty + ' VNĐ/kg')
+            break ;
+            case 'Táo': 
+            case 'Xoài': 
+            alert (thirty + ' VNĐ/kg')
+            break ;
+            case 'Cam': 
+            case 'Chôm Chôm': 
+            alert (forty + ' VNĐ/kg')
+            break ;
+            case 'Măng Cut': 
+            alert (fifty + ' VNĐ/kg')
+            break ;
+        }
+    }
+</script>
+</html>
