@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 62px;
+            height: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tính điểm Đh khối D</h1>
+    <form action="">
+        <table style="line-height: 30px;">
+            <tr>
+                <td><label for="maths">Môn Toán: </label></td>
+                <td><input type="text" name="maths" id="maths"></td>               
+            </tr>
+            <tr>
+                <td><label for="literatures">Môn Văn: </label></td>
+                <td><input type="text" name="literatures" id="literatures"></td>           
+            </tr>
+            <tr>
+                <td><label for="englishs">Môn Anh: </label></td>
+                <td><input type="englishs" name="englishs" id="englishs"></td>           
+            </tr>
+            <tr>
+                <td><label for="places">Khu vực</label></td>
+                <td>
+                    <select name="places" id="places">
+                        <option value="KV1">KV1</option>
+                        <option value="KV2">KV2</option>
+                        <option value="KV2-NT">KV2-NT</option>
+                        <option value="KV3">KV3</option>
+                    </select>
+                </td>           
+            </tr>
+            <tr><td><button onclick='caculate()' type="button">Tính điểm</button></td></tr>
+        </table>
+        <H1 style="color: red;" id="output"></H1>
+    </form>
+</body>
+<script>
+    function caculate() {
+        let maths = Number(document.getElementById('maths').value)
+        let literatures = Number(document.getElementById('literatures').value)
+        let englishs = Number(document.getElementById('englishs').value)
+        let places = document.getElementById('places').value
+        let kv1 = 0.75
+        let kv2nt = 0.5
+        let kv2 = 0.25
+        let kv3 = 0
+        let total
+        switch (places) {
+            case 'KV1': 
+            total =  maths + literatures + englishs + kv1
+            document.getElementById('output').innerHTML= 'Tổng điểm ĐH khối D của bạn là: ' + total ;
+            break;
+            case 'KV2-NT': 
+            total =  maths + literatures + englishs + kv2nt
+            document.getElementById('output').innerHTML= 'Tổng điểm ĐH khối D của bạn là: ' + total ;
+            break;
+            case 'KV2': 
+            total =  maths + literatures + englishs + kv2;
+            document.getElementById('output').innerHTML= 'Tổng điểm ĐH khối D của bạn là: ' + total ;
+            break
+            case 'KV3': 
+            total =  maths + literatures + englishs + kv3
+            document.getElementById('output').innerHTML= 'Tổng điểm ĐH khối D của bạn là: ' + total ;
+            break;
+        }
+}
+</script>
+</html>
