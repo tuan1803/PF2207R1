@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // bài 1
+    myColor =['Red' , 'Green', 'White' , 'Black'];
+    console.log (myColor)
+    
+    console.log (myColor.join ( ',' ))
+
+    // bài 2 
+    let num=window.prompt();
+    let str = num.toString();
+    let result = [str[0]];
+  
+for(var x=1; x<str.length; x++) {
+    if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+     {
+      result.push('-', str[x]);
+     }
+    else
+     {
+      result.push(str[x]);
+     }
+  }
+console.log(result.join(''));
+
+// bài 3 
+var str1 = 'cBAZc';
+var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+var result1 = [];
+  
+  for(var x=0; x<str1.length; x++)
+  {
+    if(UPPER.indexOf(str1[x]) !== -1)
+    {
+      result1.push(str1[x].toLowerCase());
+    }
+    else if(LOWER.indexOf(str1[x]) !== -1)
+    {
+      result1.push(str1[x].toUpperCase());
+    }
+    else 
+    {
+      result1.push(str1[x]);
+    }
+  }
+console.log(result1.join(''));
+</script>
+</html>
