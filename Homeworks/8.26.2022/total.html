@@ -12,7 +12,13 @@
 <script>
     let a = +prompt('Nhập vào số nguyên 1')
     let b = +prompt('Nhập vào số nguyên 2')
+    let c = 0
     let total = 0
+    if (b < a) {
+        c  = a
+        a = b
+        b = c
+    }
     for (a; a <= b; a++) {
         total += a 
     }
