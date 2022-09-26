@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="800" height="550" style="border: 1px solid;"></canvas>
+
+    <div id="output"></div>
+</body>
+<script>
+   class rectangle {
+        constructor(width,length) {
+            this.width = width
+            this.length = length
+        }
+
+        getWidth() {
+            return this.width;
+        }
+        getLength() {
+            return this.length;
+        }
+
+        getArea() {
+            return this.width * this.length ;
+        }
+
+        getPerimeter() {
+            return (this.width + this.length) *2;
+        }
+    
+    }
+    let rectangle1 = new rectangle(100 , 300);
+    let width1 = rectangle1.getWidth();
+    let length1 = rectangle1.getLength();
+    let ctx = document.getElementById('canvas').getContext('2d')
+    ctx.fillStyle = ('red')
+    ctx.fillRect( 50, 50 , width1 , length1)
+    let area = rectangle1.getArea();
+    let perimeter = rectangle1.getPerimeter();
+    console.log (area);
+    console.log (perimeter);
+    document.getElementById('output').innerHTML = "area: " + area + "; perimeter " + perimeter
+</script>
+</html>
